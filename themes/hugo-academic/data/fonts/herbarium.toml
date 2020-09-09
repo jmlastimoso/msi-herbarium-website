@@ -1,0 +1,13 @@
+# Font style metadata
+name = "Herbarium"
+
+# Optional Google font URL
+google_fonts = "Montserrat:500,700|Roboto:400;700"
+
+
+
+# Font families
+heading_font = "Montserrat"
+body_font = "Roboto"
+nav_font = "Montserrat"
+mono_font = "Cutive Mono"

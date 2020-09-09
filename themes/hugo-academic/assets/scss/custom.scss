@@ -1,0 +1,89 @@
+//NAVIGATIONAL MENU ITEMS HIERARCHY//
+// #navbar-main >>> navbar-content >>> navbar-nav >>> nav-item >>> nav-link //
+/*--*/
+
+#navbar-main { /*Customizations for the navigational bar*/
+  font-size: 18px;
+  height: 70px;
+  font-weight: 700;
+}
+
+#navbar-content { // Customization for the navigational menu items only //
+  .nav-item {
+    padding: 0px 15px 0px 15px;
+    border: solid;
+    border-color: #bfb19960;
+    border-width: 0px 1px 0px 0px;
+    line-height: 50px;
+    vertical-align: middle;
+  }
+  
+  .nav-item:hover { // Color of the box when it hovers over the menu items //
+    background-color: $sta-menu-text;
+    transition: 0.3s ease;
+  }
+
+  .nav-item:hover .nav-link { // Color of the menu text when hovered //
+    color: $sta-menu-primary;
+  }
+
+  .nav-link.active {
+    font-weight: bold;
+    color: $sta-menu-text-active;
+  }
+  
+  .nav-item:hover .nav-link.active {
+    color: $sta-menu-primary !important;
+  }
+  
+  .dropdown-menu{
+    border-radius: 0px;
+    margin-top: 0px;
+    border: 0px;
+    background-color: $sta-menu-primary;
+    
+    .dropdown-item {
+      background-color: $sta-menu-primary;
+    }
+  }
+  
+}
+
+
+
+//HOMEPAGE//DEMO SECTION//
+.parallax {
+  height: 500px;
+  background-attachment: fixed;
+}
+
+#demo h1 {
+  position: relative;
+  top: 270px;
+}
+
+#demo p {
+  position: relative;
+  top: 280px;
+}
+
+//HOMEPAGE//POSTS SECTION//
+#posts {
+  padding-top: 30px;
+  
+  .col-lg-8 {
+    @media (min-width:992px) {
+      column-count: 3;
+    }
+    
+    flex: none; 
+    max-width: none;
+    min-height: 1;
+    
+    .card-simple {
+      display: inline-block;
+      margin-top: 20px;
+      border-radius: 0px;
+    }
+  }
+}
